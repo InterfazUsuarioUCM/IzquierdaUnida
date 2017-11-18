@@ -15,244 +15,178 @@
      		<!-- Links -->
 			<link rel="icon" href="../../favicon.ico">
      		<!-- Bootstrap core CSS -->
-      		<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-      		<!-- Bootstrap theme -->
-      		<link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+      	<!-- Bootstrap theme -->
+      <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
-      		<link href="estilosPropios.css" rel="stylesheet">
+      <link href="estilosPropios.css" rel="stylesheet">
 
 		</head>
 
 		<body>
 
-			<div class="container theme-showcase" role="main">
+      <div class="row">
+        <div class="col-md-1"> </div>
+      <img src = "./logoHacienda.png" class= "img-responsive" alt= "Imagen responsive">
+           
+      </div>
 
-<!--
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Datos personales</a></li>
-            <li><a href="#about">Situación familiar</a></li>
-            <li><a href="#contact">Trabajo</a></li>
-          </ul>
+		  <div class="container theme-showcase" role="main">
+
+      <div class="row">
+        <!--<h5><center>Default Size</center></h5>-->
+        <center>
+        <a href="http://www.ucm.es" data-toggle="prueba" data-target="#http://www.ucm.es" class="btn btn-circle btn-primary">1</a></a>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-info">2</span></a>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-success">3</span></a>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-warning">4</span></a>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-danger">5</span></a>
+            <br>
+        </center>
+      </div>
+
+
+        <div class="container">
+
+          <h1> 
+            Datos Personales
+          </h1>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form class="form" role="form">
+                <div class="row">
+                
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="DNI">DNI/NIF:</label>
+                      <input type="email" class="form-control" id="DNI"
+                           placeholder="Introduce tu DNI/NIF">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4"></div>
+
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="Nombre">Nombre:</label>
+                      <input type="email" class="form-control" id="Nombre"
+                             placeholder="Introduce tu nombre">
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+
+              <form class="form" role="form">
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="Apellido1">Apellido 1:</label>
+                      <input type="email" class="form-control" id="Apellido1"
+                             placeholder="Introduce tu apellido">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2"></div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="Apellido2">Apellido 2:</label>
+                      <input type="email" class="form-control" id="Apellido2"
+                             placeholder="Introduce tu apellido">
+                    </div>
+                  </div>
+              </div>
+
+              </form>
+
+              <form class="form" role="form">
+
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="Apellido1">Dia</label>
+                      <input type="email" class="form-control" id="Apellido1"
+                             placeholder="Dia">
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                       <label for="Apellido1">Mes</label>
+      
+                   
+                  <select name="discapacidad">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="Apellido2">Año</label>
+                      <input type="email" class="form-control" id="Apellido2"
+                             placeholder="Año">
+                    </div>
+                  </div>
+              </div>
+
+              </form>
+                
+              <!--AQUI TOCARIA EL TEMA DE IF -->
+
+              <h2>Discapacidad</h2> 
+               
+               <p class="help-block">Seleccione el grado de discapacidad que tiene.</p>
+
+                <select name="discapacidad">
+                    <option value="35">Entre 0% y 35%</option>
+                    <option value="65">Entre 35% y 65%</option>
+                    <option value="100">Mayor de 65%</option>
+                </select>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">  <p class="text-primary">Además tengo acreditada la necesidad de ayuda de terceras personas o movibilidad reducida</p>
+                  </label>
+                </div>
+                
+
+          </div>
+
         </div>
       </div>
-    </nav>
--->
-
-
-
-</br>
-</br>
-</br>
-
 
 
     <div class="container">
-      <div id ="1.Datos Personales"> <!--  hay otras estructuras en función del lado de la pagina-->
-      <fieldset>
-      <h1> 
-        1.Datos Personales
-      </h1>
+      <br/>
+      <br/>
 
-        <div class="panel panel-default">
-
-      <div class="panel-body">
-       <span style='display:inline; white-space:pre;'>   DNI/NIF:</span>
-            
-            <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-
-
-             <span style='display:inline; white-space:pre;'>   Nombre:</span>
-             <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-          
-             <div>
-              <br/>
-              <br/>
-                  <span style='display:inline; white-space:pre;'>   Apellido 1:</span>
-              
-                  <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-                  <span style='display:inline; white-space:pre;'>   Apellido 2:</span>
-    
-                  <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-              <br/>
-              <br/>
-            </div>
-            <br/>
-            <br/>
-          <span style='display:inline; white-space:pre;'>Día:</span>
-          <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-
-              <br/>
-            <br/>
-            <br/>
-            <br/>
-
-
-      <!--AQUI TOCARIA EL TEMA DE IF -->
-      <div id ="2.Discapacidad"> <!--  hay otras estructuras en función del lado de la pagina-->
-
-      <h3>Discapacidad</h3> 
-       
-       <p class="help-block">Seleccione el grado de discapacidad que tiene.</p>
-
-        <select name="discapacidad">
-
-            <option value="35">Entre 0% y 35%</option>
-            <option value="65">Entre 35% y 65%</option>
-            <option value="100">Mayor de 65%</option>
-        </select>
-
-       <!-- <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle"
-              data-toggle="dropdown">
-        Título del botón <span class="caret"></span>
-      </button>
-    
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Acción #1</a></li>
-        <li><a href="#">Acción #2</a></li>
-        <li><a href="#">Acción #3</a></li>
-        <li class="divider"></li>          
-        <li><a href="#">Acción #4</a></li>
-      </ul>
-    </div>
-      </form>
+             <ul class="pager">
+              <li class="previous"><a href="#">&larr; Anterior</a></li>
+              <li class="next"><a href="#">Siguiente &rarr;</a></li>
+            </ul>
 
       </div>
-    </div>
-    -->
-    <br/>
-    <br/>
-    <span style='display:inline; white-space:pre;'> <input name="java" type="checkbox" value="on"/>Además tengo acreditada la necesidad de ayuda de terceras personas o movibilidad reducida</span>
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    </div>
-
-      
-      </fieldset>
-
-        
-      </div>
-    </div>
 
 
+          </div>
+   
 
-
-<div class="container">
-  <br/>
-  <br/>
-<div class="row">
-    <!--<h5><center>Default Size</center></h5>-->
-    <center>
-    <a href="http://www.ucm.es" data-toggle="prueba" data-target="#http://www.ucm.es" class="btn btn-circle btn-primary">1</a></a>
-    <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-info">2</span></a>
-    <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-success">3</span></a>
-    <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-warning">4</span></a>
-    <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-danger">5</span></a>
-        <br>
-    </center>
-  </div>
-    <hr>
-  </div>
-
-
-
-</div>
-
-
-
-
-
-
-<!--
-<div class="container">
-    <div class="col-sm-6" style="height:130px;">
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker11'>
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar">
-                    </span>
-                </span>
-            </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker11').datetimepicker({
-                daysOfWeekDisabled: [0, 6]
-            });
-        });
-    </script>
-</div>
 
- -->
-    
-    <!--
-
-        CARROUSEL
-    <div class="page-header">
-        <h1>Carousel</h1>
-      </div>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
-          </div>
-          <div class="item">
-            <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
-          </div>
-          <div class="item">
-            <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
- -->
-
-    
-
-				<ul class="pager">
-				  <li class="previous"><a href="#">&larr; Anterior</a></li>
-				  <li class="next"><a href="#">Siguiente &rarr;</a></li>
-				</ul>
-
-
-    </br>
-      <div class ="df-panel__content" data-role="panel-content">
-        <div class= "df-slider"></div>
-        
-			</div>
 
 		 	<!-- Bootstrap core JavaScript ================================================== -->
-		 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		    <script src="../../dist/js/bootstrap.min.js"></script>
 		    <script src="../../assets/js/docs.min.js"></script>

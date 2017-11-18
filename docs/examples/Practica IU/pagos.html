@@ -12,6 +12,10 @@
 			<meta name="keywords" content="IU, HTML, UCM, modelo 145, informática, web" />
 			<meta name="description" content="Diseño del modelo 145 del IRPF" />
 
+			<script type="text/javascript"    
+	    		src="./EsqueletoIf.js">
+			</script>
+
      		<!-- Links -->
 			<link rel="icon" href="../../favicon.ico">
      		<!-- Bootstrap core CSS -->
@@ -35,8 +39,11 @@
 					<h3>Pensiones</h3> 
 
 					<p>¿Tiene usted que pagar una pensión al cónyuge?</p>
-					<input type="radio" name="conyuge" value="si"  /> Sí
-					<input type="radio" name="conyuge" value="no" /> No
+					 <form  id="pregunta1" method="get">
+					 	<input type="radio" name="conyuge" value="no" onchange="checkPensiones(this)" /> No
+						<input type="radio" name="conyuge" value="si" onchange="checkPensiones(this)" /> Sí
+						
+					</form>
 
 					<br> Introduce importe: <input type="text" size="50"> euros <br>
 					<!-- PONER FECHA EN CASO DE SI -->
@@ -57,6 +64,22 @@
 					<input name="java" type="checkbox" value="on"/> Estoy efectuando pagos por mi vivienda por los que voy a tener derecho a deducción por inversión en vivienda habitual en el IRPF y  las retribuciones íntegras en concepto de rendimientos del trabajo procedentes de todos los pagadores es inferior a 33.007,20 euros anuales. 
 
 				</div>
+
+				<h1> What would you like it to say?</h1>
+    		<p>
+        		Commmon Requests:</p>
+		    <form action="input" id="form1" method="get">
+		    <select name="requests" onchange="check(this)">
+		        <option value="blank"></option>
+		        <option value="good morning sir">Good Morning Sir</option>
+		        <option value="good morning madam">Good Morning Madam</option>
+		        <option value="other">Other</option>
+        		<input type="button" value="GO TO" href="./mayores.html" >
+        		  <!--<a href="../IU/index2.html">AH COÑO</a>-->
+        		</input>
+
+    		</select>
+    		</form>
 			</div>
 			<!-- Bootstrap core JavaScript ================================================== -->
 		 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
