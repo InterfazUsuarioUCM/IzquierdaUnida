@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+		<head>
+			<!-- Nombre de la pestaña en el navegador-->
+			<title>Modelo 145</title>
+
+			<!-- Metainformación sobre el documento-->
+			<meta charset="utf-8">
+			<meta name="author" content="Grupo 10 - IU" /> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+			<!-- Etiquetas para el navegador-->
+			<meta name="keywords" content="IU, HTML, UCM, modelo 145, informática, web" />
+			<meta name="description" content="Diseño del modelo 145 del IRPF" />
+
+     		<!-- Links -->
+			<link rel="icon" href="../../favicon.ico">
+     		<!-- Bootstrap core CSS -->
+      		<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+      		<!-- Bootstrap theme -->
+      		<link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+      		<link href="estilosPropios.css" rel="stylesheet">
+
+		</head>
+
+		<body>
+
+			<div class="container theme-showcase" role="main">
+
+				<h1> 
+					Situación familiar
+				</h1>
+				<!--SOLTERO O CASADO-->
+				<p>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</p>
+				<input type="radio" name="sexo" value="hombre" checked="checked" /> Sí
+				<input type="radio" name="sexo" value="mujer" /> No
+
+				<br/>
+
+				<form action="http://www.google.com" method="get">
+	   					DNI/NIF Cónyuge:
+					    <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
+
+				<br/>
+
+				</form>
+
+				<p>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </p>
+				<input type="radio" name="casado" value="si" checked="checked" /> Sí
+				<input type="radio" name="casado" value="no" /> No
+				<br/>
+			</div>
+
+ 			<!-- Bootstrap core JavaScript ================================================== -->
+		 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		    <script src="../../dist/js/bootstrap.min.js"></script>
+		    <script src="../../assets/js/docs.min.js"></script>
+
+		</body>
+</html>
