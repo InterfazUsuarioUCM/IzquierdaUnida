@@ -12,6 +12,12 @@
 			<meta name="keywords" content="IU, HTML, UCM, modelo 145, informática, web" />
 			<meta name="description" content="Diseño del modelo 145 del IRPF" />
 
+
+       <script type="text/javascript"    
+          src="./EsqueletoIf.js">
+      </script>
+
+
      		<!-- Links -->
 			<link rel="icon" href="../../ico_sede2.gif">
      		<!-- Bootstrap core CSS -->
@@ -140,24 +146,36 @@
 					<h1>Trabajo</h1> 
 					
 					<p>Habiendo estado en el paro, ¿Ha tenido vd. que desplazarse al haber aceptado el puesto de trabajo actual? </p>
-					<input type="radio" name="desplazamiento" value="si"  /> Sí
-					<input type="radio" name="desplazamiento" value="no" /> No
+           <form class="form-group" id="situacionTr1">
+					   <input type="radio" name="desplazamiento" value="si" onchange="checkTrabajo(this)" /> Sí
+					   <input type="radio" name="desplazamiento" value="no" onchange="checkTrabajo(this)" /> No
+              <p ><b id="noDespl"> </b></p>
+          </form>
 
 					<p>Indique la fecha de traslado:</p>
 					<!-- PONER FECHA EN CASO DE SI -->
 
 					<p>¿Ha trabajado usted 2 o más años en los últimos 5 años:</p>
-					<input type="radio" name="trabajo2" value="si"  /> Sí
-					<input type="radio" name="trabajo2" value="no" /> No
+          <form class="form-group">
+					<input type="radio" name="trabajo2" value="si" onchange="checkTrabajo2(this)" /> Sí
+					<input type="radio" name="trabajo2" value="no" onchange="checkTrabajo2(this)" /> No
+          <p ><b id="no2Años"> </b></p>
+           </form>
 
 					<p>A efectos del cálculo del tipo de retención, ¿la he sido aplicada la reducción por irregularidad contemplada en el <a href="http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Manuales_de_ayuda_a_la_presentacion/Ejercicio_2016/_Ayuda_Modelo_100/7__Cumplimentacion_IRPF__I_/7_2__Rendimientos_del_trabajo_personal/7_2_4__Reducciones_del_rendimiento_integro/7_2_4__Reducciones_del_rendimiento_integro.html">artículo 18.2 de la Ley del Impuesto :</a> </p> 
-					<input type="radio" name="irregularidad" value="si"  /> Sí
-					<input type="radio" name="irregularidad" value="no" /> No
+          <form class="form-group">
+					<input type="radio" name="irregularidad" value="si" onchange="checkTrabajo3(this)" /> Sí
+					<input type="radio" name="irregularidad" value="no" onchange="checkTrabajo3(this)" /> No
+           <p ><b id="noReten"> </b></p>
+          </form>
+
 
 					<p>¿Ha aplicado dicha reducción en su autoliquidación del Impuesto sobre la Renta?</p>
-					<input type="radio" name="reduccion" value="si"  /> Sí
-					<input type="radio" name="reduccion" value="no" /> No
-
+           <form class="form-group">
+					   <input type="radio" name="reduccion" value="si" onchange="checkTrabajo4(this)" /> Sí
+					   <input type="radio" name="reduccion" value="no" onchange="checkTrabajo4(this)"/> No
+             <p ><b id="noReducc"> </b></p>
+          </form>
 				</div>
 
         <ul class="pager">

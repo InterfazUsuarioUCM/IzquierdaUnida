@@ -12,6 +12,11 @@
 			<meta name="keywords" content="IU, HTML, UCM, modelo 145, informática, web" />
 			<meta name="description" content="Diseño del modelo 145 del IRPF" />
 
+
+      <script type="text/javascript"    
+          src="./EsqueletoIf.js">
+      </script>
+
      		<!-- Links -->
 			<link rel="icon" href="../../ico_sede2.gif">
      		<!-- Bootstrap core CSS -->
@@ -140,24 +145,23 @@
 				</h1>
 				<!--SOLTERO O CASADO-->
 				<p>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</p>
-				<input type="radio" name="sexo" value="hombre" checked="checked" /> Sí
-				<input type="radio" name="sexo" value="mujer" /> No
-
+      <form class="form-group" id="situacion1">
+				  <input type="radio" name="sexo" value="si" check = "checked"   onchange="checkCasado(this)"  /> Sí
+				  <input type="radio" name="sexo" value="no"   onchange="checkCasado(this)"  /> No
+           <p ><b id="casado"> </b></p>
+      </form>
+     
 				<br/>
 
-				<form action="http://www.google.com" method="get">
-	   					DNI/NIF Cónyuge:
-					    <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
-
-				<br/>
-
-				</form>
-
+		
 				<p>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </p>
-				<input type="radio" name="casado" value="si" checked="checked" /> Sí
-				<input type="radio" name="casado" value="no" /> No
+        <form class="form-group" id="situacion2">
+				<input type="radio" name="casado" value="si" onchange="check1500(this)" /> Sí
+				<input type="radio" name="casado" value="no" check = "checked" onchange="check1500(this)" /> No
+        <p id="1500txt"> </p>
+        </form>
+     
 				<br/>
-
 
         <ul class="pager">
           <li class="previous"><a href="./datosPersonales.html">&larr; Anterior</a></li>

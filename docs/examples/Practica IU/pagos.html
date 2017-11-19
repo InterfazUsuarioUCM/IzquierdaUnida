@@ -145,47 +145,40 @@
 					<h3>Pensiones</h3> 
 
 					<p>¿Tiene usted que pagar una pensión al cónyuge?</p>
-					 <form  id="pregunta1" method="get">
+					 <form class="form-group" id="pregunta1" method="get">
 					 	<input type="radio" name="conyuge" value="no" onchange="checkPensiones(this)" /> No
 						<input type="radio" name="conyuge" value="si" onchange="checkPensiones(this)" /> Sí
-						
+						<p id="demo"> </p>
 					</form>
 
-					<br> Introduce importe: <input type="text" size="50"> euros <br>
-					<!-- PONER FECHA EN CASO DE SI -->
+			
+					<!--     <br> Introduce importe: <input type="text" size="50"> euros <br> -->
 
 					<p>¿Tiene usted anualidades por alimentos en favor de los hijos?</p>
-					<input type="radio" name="hijos" value="si"  /> Sí
-					<input type="radio" name="hijos" value="no" /> No
-
-					<br> Introduce importe: <input type="text" size="50"> euros <br>
+          <form class="form-group" id="pregunta2" method="get">
+            <input type="radio" name="hijos" value="no"  onchange="checkAnualidades(this)"  /> No
+            <input type="radio" name="hijos" value="si"  onchange="checkAnualidades(this)"  /> Sí
+            <p id="demo2"></p>
+          </form>
+					
 
 					<h3>Vivienda</h3> 
 
 					<p>¿Ha realizado el pago de su vivienda habitual o rehabilitado la misma antes del 1 de enero de 2013?</p>
-					<input type="radio" name="hijos" value="si"  /> Sí
-					<input type="radio" name="hijos" value="no" /> No
+          <form class="form-group" id="pregunta3" >
+              
+              <input type="radio" name="hijos" value="no"  onchange="checkVivienda(this)" /> No
+					    <input type="radio" name="hijos" value="si"  onchange="checkVivienda(this)" /> Sí
 
+          </form>
+          <p id = "checkbox"/> </p>
+          <p id="demo3"></p>
 					<br/>
-					<input name="java" type="checkbox" value="on"/> Estoy efectuando pagos por mi vivienda por los que voy a tener derecho a deducción por inversión en vivienda habitual en el IRPF y  las retribuciones íntegras en concepto de rendimientos del trabajo procedentes de todos los pagadores es inferior a 33.007,20 euros anuales. 
+
+          <!--<input name="java" type="checkbox" value="on"/> Estoy efectuando pagos por mi vivienda por los que voy a tener derecho a deducción por inversión en vivienda habitual en el IRPF y  las retribuciones íntegras en concepto de rendimientos del trabajo procedentes de todos los pagadores es inferior a 33.007,20 euros anuales.  -->
+					
 
 				</div>
-
-				<h1> What would you like it to say?</h1>
-    		<p>
-        		Commmon Requests:</p>
-		    <form action="input" id="form1" method="get">
-		    <select name="requests" onchange="check(this)">
-		        <option value="blank"></option>
-		        <option value="good morning sir">Good Morning Sir</option>
-		        <option value="good morning madam">Good Morning Madam</option>
-		        <option value="other">Other</option>
-        		<input type="button" value="GO TO" href="./mayores.html" >
-        		  <!--<a href="../IU/index2.html">AH COÑO</a>-->
-        		</input>
-
-    		</select>
-    		</form>
 
 
         <ul class="pager">
