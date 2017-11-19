@@ -139,34 +139,44 @@
 
       </div>
       <!-- /NAVEGACIÓN Y LOGO-->
-      
+      <div class="container">
+
 				<h1> 
 					Situación familiar
 				</h1>
-				<!--SOLTERO O CASADO-->
-				<p>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</p>
-      <form class="form-group" id="situacion1">
-				  <input type="radio" name="sexo" value="si" check = "checked"   onchange="checkCasado(this)"  /> Sí
-				  <input type="radio" name="sexo" value="no"   onchange="checkCasado(this)"  /> No
-           <p ><b id="casado"> </b></p>
-      </form>
      
 				<br/>
 
-		
-				<p>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </p>
-        <form class="form-group" id="situacion2">
-				<input type="radio" name="casado" value="si" onchange="check1500(this)" /> Sí
-				<input type="radio" name="casado" value="no" check = "checked" onchange="check1500(this)" /> No
-        <p id="1500txt"> </p>
-        </form>
-     
-				<br/>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+    				<!--SOLTERO O CASADO-->
+            <h4>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</h4>
+            <form class="form-group" id="situacion1">
+              <label class="radio-inline"><input type="radio" name="sexo" value="si" check = "checked"   onchange="checkCasado(this)" />Si</label>
+              <label class="radio-inline"> <input type="radio" name="sexo" value="no"   onchange="checkCasado(this)"  /> No</label>
+            <p ><b id="casado"> </b></p>
+            </form>
+
+
+    				<h4>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </h4>
+              <form class="form-group" id="situacion2">
+            <label class="radio-inline"><input type="radio" name="casado" value="si" onchange="check1500(this)" /> Si</label>
+            <label class="radio-inline"><input type="radio" name="casado" value="no" check = "checked" onchange="check1500(this)" /> No</label>
+            <p ><b id="1500txt"> </b></p>
+            </form>
+    
+
+          </div>
+        </div>
+
 
         <ul class="pager">
           <li class="previous"><a href="./datosPersonales.html">&larr; Anterior</a></li>
           <li class="next"><a href="./hijosyDescendientes.html">Siguiente &rarr;</a></li>
         </ul>
+
+      </div>
 
 		</div>
 
