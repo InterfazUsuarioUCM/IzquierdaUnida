@@ -135,30 +135,78 @@
       </div>
       <!-- /NAVEGACIÓN Y LOGO-->
       
-				<div id ="3.Trabajo"> <!--  hay otras estructuras en función del lado de la pagina-->
+       <div class="container">
 
-					<h1>Trabajo</h1> 
+        <h1> 
+          Trabajo
+        </h1>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
 					
-					<p>Habiendo estado en el paro, ¿Ha tenido vd. que desplazarse al haber aceptado el puesto de trabajo actual? </p>
-					<input type="radio" name="desplazamiento" value="si"  /> Sí
-					<input type="radio" name="desplazamiento" value="no" /> No
+  					<h4>Habiendo estado en el paro, ¿Ha tenido vd. que desplazarse al haber aceptado el puesto de trabajo actual? </h4>
+            <label class="radio-inline"><input type="radio" name="optradio">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio">No</label>
 
-					<p>Indique la fecha de traslado:</p>
-					<!-- PONER FECHA EN CASO DE SI -->
 
-					<p>¿Ha trabajado usted 2 o más años en los últimos 5 años:</p>
-					<input type="radio" name="trabajo2" value="si"  /> Sí
-					<input type="radio" name="trabajo2" value="no" /> No
+            <form class="form" role="form">
 
-					<p>A efectos del cálculo del tipo de retención, ¿la he sido aplicada la reducción por irregularidad contemplada en el <a href="http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Manuales_de_ayuda_a_la_presentacion/Ejercicio_2016/_Ayuda_Modelo_100/7__Cumplimentacion_IRPF__I_/7_2__Rendimientos_del_trabajo_personal/7_2_4__Reducciones_del_rendimiento_integro/7_2_4__Reducciones_del_rendimiento_integro.html">artículo 18.2 de la Ley del Impuesto :</a> </p> 
-					<input type="radio" name="irregularidad" value="si"  /> Sí
-					<input type="radio" name="irregularidad" value="no" /> No
+                <div class="row">
+                  <div class="col-md-2">
 
-					<p>¿Ha aplicado dicha reducción en su autoliquidación del Impuesto sobre la Renta?</p>
-					<input type="radio" name="reduccion" value="si"  /> Sí
-					<input type="radio" name="reduccion" value="no" /> No
+                    <h3> <p class="text-primary">Fecha de traslado:</p></h3>   
+                  </div>
 
-				</div>
+                  <div class="col-md-1">
+                    <div class="form-group">
+                      <label for="Apellido1">Dia</label>
+                      <input type="email" class="form-control" id="Apellido1"
+                             placeholder="Dia">
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                       <label for="Apellido1">Mes</label>
+                       <p></p>
+                  <select name="discapacidad">
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <label for="Apellido2">Año</label>
+                      <input type="email" class="form-control" id="Apellido2"
+                             placeholder="Año">
+                    </div>
+                  </div>
+              </div>
+
+            </form>
+  					<h4>¿Ha trabajado usted 2 o más años en los últimos 5 años:</h4>
+            <label class="radio-inline"><input type="radio" name="optradio1">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio1">No</label>
+
+  					<h4>A efectos del cálculo del tipo de retención, ¿la he sido aplicada la reducción por irregularidad contemplada en el <a href="http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Manuales_de_ayuda_a_la_presentacion/Ejercicio_2016/_Ayuda_Modelo_100/7__Cumplimentacion_IRPF__I_/7_2__Rendimientos_del_trabajo_personal/7_2_4__Reducciones_del_rendimiento_integro/7_2_4__Reducciones_del_rendimiento_integro.html">artículo 18.2 de la Ley del Impuesto</a>? </h4> 
+            <label class="radio-inline"><input type="radio" name="optradio2">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio2">No</label>
+
+  					<h4>¿Ha aplicado dicha reducción en su autoliquidación del Impuesto sobre la Renta?</h4>
+            <label class="radio-inline"><input type="radio" name="optradio3">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio3">No</label>
+
+				  </div>
+        </div>
 
         <ul class="pager">
           <li class="previous"><a href="./Mayores.html">&larr; Anterior</a></li>
@@ -166,6 +214,7 @@
         </ul>
 
 			</div>
+    </div>
 
  			<!-- Bootstrap core JavaScript ================================================== -->
 		 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

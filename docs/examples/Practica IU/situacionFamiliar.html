@@ -134,35 +134,41 @@
 
       </div>
       <!-- /NAVEGACIÓN Y LOGO-->
-      
+      <div class="container">
+
 				<h1> 
 					Situación familiar
 				</h1>
-				<!--SOLTERO O CASADO-->
-				<p>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</p>
-				<input type="radio" name="sexo" value="hombre" checked="checked" /> Sí
-				<input type="radio" name="sexo" value="mujer" /> No
 
-				<br/>
+        <div class="panel panel-default">
+          <div class="panel-body">
+    				<!--SOLTERO O CASADO-->
+            <h4>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</h4>
+            <label class="radio-inline"><input type="radio" name="optradio">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio">No</label>
 
-				<form action="http://www.google.com" method="get">
-	   					DNI/NIF Cónyuge:
-					    <input type="text" name="q" value="" /> <!--  Text puede ser password  -->
 
-				<br/>
+    				<h4>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </h4>
+            <label class="radio-inline"><input type="radio" name="optradio">Si</label>
+            <label class="radio-inline"><input type="radio" name="optradio">No</label>
 
-				</form>
 
-				<p>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </p>
-				<input type="radio" name="casado" value="si" checked="checked" /> Sí
-				<input type="radio" name="casado" value="no" /> No
-				<br/>
+              <div class="form-inline" role="form">
+                  <div class="form-group">
+                  <label for="DNI">DNI/NIF Cónyuge</label>
+                     <input type="email" class="form-control" id="DNI" placeholder="Introduce tu DNI/NIF">
+                </div>
+              </div>
 
+          </div>
+        </div>
 
         <ul class="pager">
           <li class="previous"><a href="./datosPersonales.html">&larr; Anterior</a></li>
           <li class="next"><a href="./hijosyDescendientes.html">Siguiente &rarr;</a></li>
         </ul>
+
+      </div>
 
 		</div>
 
